@@ -1,0 +1,124 @@
+$small: 450px;
+$medium: 768px;
+$high: 1264px;
+$very-high: 1400px;
+
+.basket {
+  width: 20em;
+  display: block;
+  margin: 0 auto;
+  margin-top: 2em;
+  position: relative;
+  &--apple1 {
+    width: 3.5em;
+    top: 75%;
+    left: 49%;
+    position: absolute;
+    z-index: 100;
+    animation: apple infinite 2s ease-in;
+  }
+  &--apple2 {
+    width: 3.5em;
+    top: 75%;
+    left: 52%;
+    position: absolute;
+    z-index: 100;
+    animation: apple infinite 2s ease-in-out;
+  }
+  &--apple3 {
+    width: 3.5em;
+    top: 75%;
+    left: 46%;
+    position: absolute;
+    z-index: 100;
+    animation: apple infinite 2s ease-out;
+  }
+}
+
+@media (max-width: $medium) {
+  .basket {
+    width: 17em;
+    margin-top: 10em;
+  }
+}
+
+// @media (max-width: $small) {
+//   .basket--apple1 {
+//     top: 45%;
+//     left: 35%;
+//   }
+// }
+
+@media (max-width: $medium) {
+  .basket--apple1 {
+    top: 54%;
+    left: 38%;
+  }
+}
+@media (max-width: $high) {
+  .basket--apple1 {
+    top: 75%;
+    left: 38%;
+  }
+}
+
+@media (max-width: $very-high) {
+  .basket--apple1 {
+    top: 74%;
+    left: 42%;
+  }
+}
+
+@media (max-width: $medium) {
+  .basket--apple2 {
+    top: 54%;
+    left: 47%;
+  }
+}
+
+@media (max-width: $high) {
+  .basket--apple2 {
+    top: 75%;
+    left: 47%;
+  }
+}
+
+@media (max-width: $very-high) {
+  .basket--apple2 {
+    top: 74%;
+    left: 48%;
+  }
+}
+
+@media (max-width: $medium) {
+  .basket--apple3 {
+    top: 54%;
+    left: 55%;
+  }
+}
+
+@media (max-width: $high) {
+  .basket--apple3 {
+    top: 75%;
+    left: 55%;
+  }
+}
+
+@media (max-width: $very-high) {
+  .basket--apple3 {
+    top: 74%;
+    left: 54%;
+  }
+}
+
+@keyframes apple {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
