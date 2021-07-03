@@ -2,4 +2,42 @@
   width: 20em;
   margin: 0 auto;
   margin-top: 2em;
+  position: relative;
+  z-index: 10;
+  &--apple1 {
+    width: 3.5em;
+    top: 75%;
+    left: 49%;
+    position: absolute;
+    z-index: 100;
+    animation: apple infinite 2s ease-in;
+  }
+  &--apple2 {
+    width: 3.5em;
+    top: 75%;
+    left: 52%;
+    position: absolute;
+    z-index: 100;
+    animation: apple infinite 2s ease-in-out;
+  }
+  &--apple3 {
+    width: 3.5em;
+    top: 75%;
+    left: 46%;
+    position: absolute;
+    z-index: 100;
+    animation: apple infinite 2s ease-out;
+  }
+}
+
+@keyframes apple {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.4;
+  }
 }

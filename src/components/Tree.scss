@@ -4,6 +4,12 @@
   display: block;
   position: relative;
   margin: 0 auto;
+  &--clicked {
+    animation-name: shaker;
+    animation-duration: 0.8s;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+  }
 }
 
 @keyframes shaker {
@@ -44,18 +50,17 @@
 
 .button {
   font-size: 1.5em;
-  border-radius: 1em;
-  background-color: rgba(87, 163, 87, 0.856);
+  border-radius: 0.6em;
+  background-color: rgba(46, 136, 46, 0.856);
   padding: 0.6em;
   position: relative;
   display: block;
   margin: 0 auto;
+  outline: none;
+  border: none;
 }
 
-.clicked {
-  animation-name: shaker;
-  animation-duration: 0.8s;
-  // transform-origin: 50% 50%;
-  animation-iteration-count: 2;
-  animation-timing-function: linear;
+.button:hover {
+  background-color: rgba(226, 70, 13, 0.87);
+  color: white;
 }

@@ -7,7 +7,8 @@ import "./App.scss";
 function App() {
   return (
     <div className="App">
-      <Tree />
+      {/* Our components */}
+      <Tree /> 
       <Apple />
       <Basket />
     </div>

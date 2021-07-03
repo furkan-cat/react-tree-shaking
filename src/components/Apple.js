@@ -4,7 +4,7 @@ import apple from "../apple.svg";
 import "./Apple.scss";
 
 const Apple = () => {
-  const clicked = useSelector((state) => state.click); // Button global state
+  const clicked = useSelector((state) => state.click); // Trigger button global state
 
   useEffect(() => {
     const img1 = document.getElementById("img1");
@@ -19,12 +19,11 @@ const Apple = () => {
           return Math.floor(Math.random() * (max - min + 1)) + min;
         }
 
-        Count = randomInteger(40, 57) + "%";
+        Count = randomInteger(40, 57) + "%"; // Create random number for random positioning of apples.
         img1.style.left = Count;
 
         img1.src = apple;
         img1.className = "apple";
-        
       }
     }, 3000);
 
@@ -35,7 +34,7 @@ const Apple = () => {
         function randomInteger2(min, max) {
           return Math.floor(Math.random() * (max - min + 1)) + min;
         }
-        Count2 = randomInteger2(40, 57) + "%";
+        Count2 = randomInteger2(40, 57) + "%"; // Create random number for random positioning of apples.
         img2.style.left = Count2;
 
         img2.src = apple;
@@ -45,20 +44,22 @@ const Apple = () => {
 
     setTimeout(() => {
       // IMG 3
-      let Count3;
+      if (clicked) {
+        let Count3;
 
-      function randomInteger3(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
+        function randomInteger3(min, max) {
+          return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        Count3 = randomInteger3(40, 57) + "%"; // Create random number for random positioning of apples.
+        img3.style.left = Count3;
+
+        img3.src = apple;
+        img3.className = "apple";
       }
-      Count3 = randomInteger3(40, 57) + "%";
-      img3.style.left = Count3;
-
-      img3.src = apple;
-      img3.className = "apple";
     }, 4000);
 
     if (!clicked) {
-      img1.className = "";
+      img1.className = ""; 
       img1.src = "";
       img2.className = "";
       img2.src = "";
@@ -83,9 +84,9 @@ const Apple = () => {
 
   return (
     <>
-      <img className={!clicked ? null : ""} id="img1" />
-      <img className={!clicked ? null : ""} id="img2" />
-      <img className={!clicked ? null : ""} id="img3" />
+      <img id="img1" />
+      <img id="img2" />
+      <img id="img3" />
     </>
   );
 };
