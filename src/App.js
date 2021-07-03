@@ -6,7 +6,7 @@ import "./App.scss";
 
 function App() {
   return (
-    <React.Fragment className="App">
+    <React.Fragment>
       <Tree />
       <Apple />
       <Basket />

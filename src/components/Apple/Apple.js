@@ -1,11 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { useSelector } from "react-redux";
 import apple from "../../assets/apple.svg";
-import {
-  randomInteger1,
-  randomInteger2,
-  randomInteger3,
-} from "../../utils/randomInteger";
+import { randomInteger } from "../../utils/randomInteger";
 import "./Apple.scss";
 
 const Apple = () => {
@@ -22,7 +18,7 @@ const Apple = () => {
       if (clicked) {
         let Count1;
         // Create random number for random positioning of apples through the helper function from utils folder
-        Count1 = randomInteger1(40, 57) + "%";
+        Count1 = randomInteger(40, 57) + "%";
         img1Ref.current.style.left = Count1;
 
         img1Ref.current.src = apple;
@@ -35,7 +31,7 @@ const Apple = () => {
       if (clicked) {
         let Count2;
         // Create random number for random positioning of apples through the helper function from utils folder
-        Count2 = randomInteger2(40, 57) + "%";
+        Count2 = randomInteger(40, 57) + "%";
         img2Ref.current.style.left = Count2;
 
         img2Ref.current.src = apple;
@@ -48,7 +44,7 @@ const Apple = () => {
       if (clicked) {
         let Count3;
         // Create random number for random positioning of apples through the helper function from utils folder
-        Count3 = randomInteger3(40, 57) + "%";
+        Count3 = randomInteger(40, 57) + "%";
         img3Ref.current.style.left = Count3;
 
         img3Ref.current.src = apple;
