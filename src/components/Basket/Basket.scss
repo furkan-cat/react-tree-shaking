@@ -1,7 +1,12 @@
-$small: 450px;
+$small: 480px;
 $medium: 768px;
-$high: 1264px;
+$high: 1200px;
 $very-high: 1400px;
+
+.container {
+  position: relative;
+  display: flex;
+}
 
 .basket {
   width: 20em;
@@ -35,79 +40,83 @@ $very-high: 1400px;
   }
 }
 
-@media (max-width: $medium) {
+@media screen and (max-width: $medium) {
   .basket {
     width: 17em;
-    margin-top: 10em;
+    margin-top: 5em;
   }
 }
 
-// @media (max-width: $small) {
-//   .basket--apple1 {
-//     top: 45%;
-//     left: 35%;
-//   }
-// }
+@media screen and (max-width: $small) {
+  .basket--apple1 {
+    top: 45%;
+    left: 5%;
+  }
+}
 
-@media (max-width: $medium) {
+@media screen and (max-width: $medium) {
   .basket--apple1 {
     top: 54%;
-    left: 38%;
+    left: 35%;
   }
 }
-@media (max-width: $high) {
+
+@media screen and (max-width: $high) {
   .basket--apple1 {
     top: 75%;
     left: 38%;
   }
 }
 
-@media (max-width: $very-high) {
+@media screen and (max-width: $very-high) {
   .basket--apple1 {
+    width: 3em;
     top: 74%;
-    left: 42%;
+    left: 37%;
   }
 }
 
-@media (max-width: $medium) {
+@media screen and (max-width: $medium) {
   .basket--apple2 {
     top: 54%;
     left: 47%;
   }
 }
 
-@media (max-width: $high) {
+@media screen and (max-width: $high) {
   .basket--apple2 {
     top: 75%;
     left: 47%;
   }
 }
 
-@media (max-width: $very-high) {
+@media screen and (max-width: $very-high) {
   .basket--apple2 {
+    width: 3em;
     top: 74%;
-    left: 48%;
+    left: 47%;
   }
 }
 
-@media (max-width: $medium) {
+@media screen and (max-width: $medium) {
   .basket--apple3 {
     top: 54%;
     left: 55%;
   }
 }
 
-@media (max-width: $high) {
+@media screen and (max-width: $high) {
   .basket--apple3 {
     top: 75%;
     left: 55%;
   }
 }
 
-@media (max-width: $very-high) {
+@media screen and (max-width: $very-high) {
   .basket--apple3 {
+    width: 3em;
     top: 74%;
-    left: 54%;
+    left: 57%;
   }
 }
 

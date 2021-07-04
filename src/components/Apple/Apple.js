@@ -56,8 +56,10 @@ const Apple = () => {
       // If it's not clicked, delete apples from the page
       img1Ref.current.className = "";
       img1Ref.current.src = "";
+
       img2Ref.current.className = "";
       img2Ref.current.src = "";
+      
       img3Ref.current.className = "";
       img3Ref.current.src = "";
     }

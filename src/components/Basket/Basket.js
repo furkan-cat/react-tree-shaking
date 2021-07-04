@@ -32,10 +32,12 @@ const Basket = () => {
 
   return (
     <React.Fragment>
-      <img className="basket" src={basket} alt="" />
-      <img className="basket--apple1" id="apple-basket1" ref={img1Ref} />
-      <img className="basket--apple2" id="apple-basket2" ref={img2Ref} />
-      <img className="basket--apple3" id="apple-basket3" ref={img3Ref} />
+      <div className="container">
+        <img className="basket" src={basket} alt="" />
+        <img className="basket--apple1" ref={img1Ref} />
+        <img className="basket--apple2" ref={img2Ref} />
+        <img className="basket--apple3" ref={img3Ref} />
+      </div>
     </React.Fragment>
   );
 };
