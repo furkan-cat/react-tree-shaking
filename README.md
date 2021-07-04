@@ -15,19 +15,20 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Dummy shopping app with shopping API.
+There is a tree with big, juicy and red apples on it. We want to collect those apples but we can't reach them. Because the tree is very high. We have to shake the tree to drop apples. After that, we can put the apples to our apple basket. 
 
-[Project-Demo](https://admiring-allen-ac76f4.netlify.app/)
+There are 4 objects on the screen. Apples, tree, basket and a button. I used any SVG image for these. After clicking the button the tree will shaking for 3 seconds. After shaking effect, more than one apple will be dropped in different time. The apples are appearing on basket 1 second later after dropped. 
+Apple basket, tree, and apples are separated into different components and they talk to each other with redux. 
 
-![Screenshot from 2021-06-23 22-44-19](https://user-images.githubusercontent.com/75113766/123158629-b69d7780-d474-11eb-80f6-027c62a4b32a.png)
+[Project-Demo](https://loving-wozniak-b72414.netlify.app/)
+
+![Screenshot from 2021-07-04 16-32-33](https://user-images.githubusercontent.com/75113766/124387000-9deb5800-dce5-11eb-8f7e-3e3c756de5b7.png)
 
 #### React Used
 
-* Hooks
-* Route
+* Hooks (useEffect, useRef)
+* SCSS
 * Redux
-* Multi Reducer Management
-* Semantic UI
 
 ### Built With
 * [React](https://www.javascript.com/)
